@@ -1,0 +1,1 @@
+These build files were built on Ubuntu. If you want them for Windows, build them yourself from the .cpp files, as I will not be interacting with the spyware any longer.
