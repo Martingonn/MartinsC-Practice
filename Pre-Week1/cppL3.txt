@@ -1,0 +1,36 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std;
+
+int main()
+{
+    float wysokosc1, wysokosc2, roznica;
+    cout << "Miernik wzrostu" << endl;
+    this_thread::sleep_for(chrono::seconds(3));
+    cout << "Podaj wysokość 1 [m]: " << endl;
+    cin >> wysokosc1;
+    cout << "Podaj wysokość 2 [m]: " << endl;
+    cin >> wysokosc2;
+    cout << "Wysokosc 1 to: " << wysokosc1 << endl;
+    cout << "Wysokosc 2 to: " << wysokosc2 << endl;
+    if(wysokosc1 > wysokosc2)
+    {
+        roznica = wysokosc1 - wysokosc2;
+        cout << "Wysokosc 1 jest większa o " << roznica << " m.";
+    }
+    else if(wysokosc2 > wysokosc1)
+    {
+        roznica = wysokosc2 - wysokosc1;
+        cout << "Wysokosc 2 jest większa o " << roznica << " m.";
+    }
+    else if(wysokosc1 == wysokosc2)
+    {
+        cout << "Wysokość 1 i Wysokość 2 są równe. ";
+    }
+    else
+    {
+        cout << "Wystąpił błąd.";
+    }
+    return 0;
+}

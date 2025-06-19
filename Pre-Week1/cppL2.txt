@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{   
+    short wiek, roznica;
+    cout<<"Wpisz wiek: ";
+    cin>>wiek;
+    cout<<"Masz "<<wiek<<" lat!"<<endl;
+    if(wiek>=18)
+        {
+            cout<<"Jesteś pełnoletni! Masz "<<wiek<<" lat!"<<endl;
+        }
+    else if (wiek=11)
+        {
+            cout<<"Masz tyle lat co Adam! Nie możesz korzystać z aplikacji :)";
+            return 0;
+        }
+    else
+        {
+            cout<<"Jesteś niepełnoletni! Masz "<<wiek<<" lat!";
+        }
+}
